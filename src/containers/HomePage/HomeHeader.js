@@ -98,7 +98,7 @@ class HomeHeader extends Component {
 const mapStateToProps = state => {
     return {
         lang: state.app.language,
-        contentOfConfirmModal: state.app.contentOfConfirmModal,
+        isLoggedIn: state.user.isLoggedIn,
         userInfo: state.user.userInfo
     };
 };
