@@ -26,7 +26,7 @@ class HomeHeader extends Component {
                         </div>
                         <div className='center-content'>
                             <div className='child-content'>
-                                <div><b><FormattedMessage id='homeheader.speciality' /></b></div>
+                                <div><b><FormattedMessage id='homeheader.specialty' /></b></div>
                                 <div className='sub-title'><FormattedMessage id='homeheader.searchdoctor'/></div>
                             </div>
                             <div className='child-content'>
@@ -98,7 +98,8 @@ class HomeHeader extends Component {
 const mapStateToProps = state => {
     return {
         lang: state.app.language,
-        contentOfConfirmModal: state.app.contentOfConfirmModal
+        contentOfConfirmModal: state.app.contentOfConfirmModal,
+        userInfo: state.user.userInfo
     };
 };
 
